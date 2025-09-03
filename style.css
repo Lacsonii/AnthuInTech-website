@@ -3,9 +3,7 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap');
 
-/* =========================
-   Root Variables (Theme Colors)
-   ========================= */
+/* Root Variables (Theme Colors) */
 :root {
     --color-primary: #0F172A;   /* Deep Space Blue */
     --color-secondary: #1E293B; /* Dark Gray-Blue */
@@ -102,9 +100,7 @@ footer p {
     letter-spacing: 1px;
 }
 
-/* =========================
-   Responsive Design
-   ========================= */
+/* Responsive Design */
 @media (max-width: 1024px) {
     .header h1 {
         font-size: 2.2rem;
