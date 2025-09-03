@@ -5,12 +5,26 @@
 
 /* Root Variables (Theme Colors) */
 :root {
-    --color-primary: #0F172A;   /* Deep Space Blue */
-    --color-secondary: #1E293B; /* Dark Gray-Blue */
-    --color-accent: #14F1D9;    /* Neon Teal */
-    --color-highlight: #7B2FF7; /* Electric Violet */
-    --color-text: #E2E8F0;      /* Light Gray */
-    --color-muted: #94A3B8;     /* Muted Gray */
+:root {
+    
+    --color-background-main: #0F172A;   /* Primary deep background */
+    --color-background-alt: #1E293B;    /* Secondary section background */
+
+    --color-text-main: #E2E8F0;         /* Normal text */
+    --color-text-muted: #94A3B8;        /* Subtle/secondary text */
+
+    --color-button-primary: #14F1D9;    /* Primary button bg (Neon Teal) */
+    --color-button-hover: #7B2FF7;      /* Button hover / accent (Electric Violet) */
+    --color-button-text: #0F172A;       /* Button text color (Dark for contrast) */
+
+    /* Accents */
+    --color-accent: #14F1D9;            /* Glow / link highlight */
+    --color-highlight: #7B2FF7;         /* Secondary highlight */
+
+    /* Borders & Dividers */
+    --color-border: rgba(20, 241, 217, 0.3); /* Subtle teal border glow */
+}
+
 }
 
 /* Global Reset */
