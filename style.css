@@ -5,8 +5,7 @@
 
 /* Root Variables (Theme Colors) */
 :root {
-:root {
-    
+
     --color-background-main: #0F172A;   /* Primary deep background */
     --color-background-alt: #1E293B;    /* Secondary section background */
 
@@ -23,7 +22,6 @@
 
     /* Borders & Dividers */
     --color-border: rgba(20, 241, 217, 0.3); /* Subtle teal border glow */
-}
 
 }
 
