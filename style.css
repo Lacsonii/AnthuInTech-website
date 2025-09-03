@@ -1,0 +1,151 @@
+/* style.css - Anthu In Tech Theme */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap');
+
+/* =========================
+   Root Variables (Theme Colors)
+   ========================= */
+:root {
+    --color-primary: #0F172A;   /* Deep Space Blue */
+    --color-secondary: #1E293B; /* Dark Gray-Blue */
+    --color-accent: #14F1D9;    /* Neon Teal */
+    --color-highlight: #7B2FF7; /* Electric Violet */
+    --color-text: #E2E8F0;      /* Light Gray */
+    --color-muted: #94A3B8;     /* Muted Gray */
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Header */
+.header img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 12px var(--color-accent));
+}
+
+.header h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgba(20, 241, 217, 0.6);
+}
+
+/* Content */
+.content p {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin: 1rem 0;
+    opacity: 0.9;
+}
+
+/* Button */
+button {
+    background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
+    color: var(--color-primary);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(123, 47, 247, 0.4);
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(20, 241, 217, 0.5);
+}
+
+/* Footer */
+footer {
+    background: var(--color-secondary);
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(20, 241, 217, 0.2);
+}
+
+footer p {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   Responsive Design
+   ========================= */
+@media (max-width: 1024px) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header img {
+        width: 100px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 0.9rem;
+    }
+}
