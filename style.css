@@ -43,9 +43,10 @@ body {
 
 /* Header */
 .header img {
-    width: 120px;
+    width: 500px;
     height: auto;
     margin-bottom: 1rem;
+    border-radius: 5px 0 5px 0;
     filter: drop-shadow(0 0 12px var(--color-accent));
 }
 
@@ -80,6 +81,51 @@ button {
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 15px rgba(123, 47, 247, 0.4);
 }
+/*/ company linkes */
+.company-links {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.company-links h2 {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Inline links */
+.company-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* keeps links responsive on smaller screens */
+    gap: 1.5rem;
+}
+
+.company-links ul li {
+    margin: 0;
+}
+
+.company-links ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text);
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect with glow */
+.company-links ul li a:hover {
+    color: var(--color-primary);
+    background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
+    box-shadow: 0 0 12px rgba(20, 241, 217, 0.6), 0 0 18px rgba(123, 47, 247, 0.4);
+}
+
 
 button:hover {
     transform: translateY(-3px) scale(1.05);
