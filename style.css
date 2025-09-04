@@ -47,15 +47,15 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
     padding: 2rem;
 }
 
 /* Header */
 .header img {
-    width: 600px;
+    width: 100px;
     height: auto;
     margin-bottom: 1rem;
     border-radius: 2px;
@@ -78,6 +78,7 @@ body {
     color: var(--color-text);
     margin: 1rem 0;
     opacity: 0.9;
+    /* font-weight: normal; */
 }
 
 /* Button */
@@ -152,14 +153,15 @@ button {
 
 /* Footer */
 footer {
-    background: var(--color-secondary);
+    background: var(--color-background-main);
+     color: var(--color-text-main);
     padding: 1rem 0;
-    text-align: center;
-    border-top: 1px solid rgba(20, 241, 217, 0.2);
+    height: 500px;
+    text-align: left;
+    border-top: 5px solid var(--color-accent);
 }
 
 footer p {
-    color: var(--color-muted);
     font-size: 0.9rem;
     letter-spacing: 1px;
 }
