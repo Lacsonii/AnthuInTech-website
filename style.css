@@ -156,7 +156,7 @@ button {
 /* Footer */
 footer {
     background: var(--color-background-main);
-     color: var(--color-text-main);
+    color: var(--color-text-main);
     padding: 1rem 0;
     height: 500px;
     text-align: left;
@@ -166,16 +166,35 @@ footer {
 footer p {
     font-size: 0.9rem;
     letter-spacing: 1px;
+    text-align: center;
 }
- footer pre{
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--color-accent);
+
+footer pre {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: var(--color-text-main);
     letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 0 0 8px rgba(20, 241, 217, 0.6);
- }
+}
+
+/* Social Icons */
+footer .social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    color: var(--color-text-main);
+    font-size: 28px;
+    margin: 0 12px;
+    transition: all 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: var(--color-accent);
+    transform: scale(1.2);
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
     .header h1 {
