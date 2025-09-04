@@ -64,23 +64,23 @@ body {
 
 .header h1 {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: var(--color-accent);
     letter-spacing: 2px;
     text-transform: uppercase;
     text-shadow: 0 0 8px rgba(20, 241, 217, 0.6);
-    text-align: center;
+    text-align: right;
+     margin: -150px 50px 0 0;
 }
 
 /* Content */
 .content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--color-text);
-    margin: 1rem 0;
+    margin: 0px 50px 0 0;
     opacity: 0.9;
-
-    /* font-weight: normal; */
+    text-align: right;
 }
 
 /* Button */
@@ -102,13 +102,13 @@ button {
     margin-top: 2rem;
 }
 
-.company-links h2 {
+/* .company-links h2 {
     font-size: 1.5rem;
     color: var(--color-accent);
     margin-bottom: 1.5rem;
     font-family: 'Rajdhani', sans-serif;
     letter-spacing: 1px;
-}
+} */
 
 /* Inline links */
 .company-links ul {
