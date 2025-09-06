@@ -117,14 +117,51 @@ body {
 }
 
 /* Language selector */
-.language-selector select {
-    padding: 0.3rem 0.6rem;
-    border-radius: 6px;
-    border: 1px solid var(--color-border);
-    background: var(--color-background-main);
-    color: var(--color-text-main);
-    font-size: 0.9rem;
+.language-selector {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
+
+.language-selector i {
+    font-size: 1.2rem;
+    color: var(--color-text-main);
+    transition: color 0.3s;
+}
+
+.language-selector i:hover {
+    color: var(--color-accent);
+}
+
+/* Dropdown menu */
+.lang-menu {
+    display: none;
+    position: absolute;
+    top: 120%; /* just below globe */
+    right: 0;
+    background: var(--color-background-main);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    list-style: none;
+    padding: 0.3rem 0;
+    margin: 0;
+    min-width: 120px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.lang-menu li {
+    padding: 0.5rem 1rem;
+    color: var(--color-text-main);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.lang-menu li:hover {
+    background: var(--color-accent);
+    color: var(--color-background-main);
+}
+
 
 
 
