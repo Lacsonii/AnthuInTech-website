@@ -10,4 +10,21 @@ document.addEventListener("DOMContentLoaded", () => {
             searchInput.style.display = "none";
         }
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const langIcon = document.getElementById("langIcon");
+    const langMenu = document.getElementById("langMenu");
+
+    // Toggle dropdown when clicking globe
+    langIcon.addEventListener("click", () => {
+        langMenu.style.display = langMenu.style.display === "block" ? "none" : "block";
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (event) => {
+        if (!langIcon.contains(event.target) && !langMenu.contains(event.target)) {
+            langMenu.style.display = "none";
+        }
+    });
 });
+
