@@ -40,62 +40,88 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.6;
-}
-/* Topbar */
+
+    
+    /* Topbar */
 .topbar {
-    background: var(--color-background-alt);
-    color: var(--color-text-main);
     display: flex;
-    justify-content: flex-end; /* push everything to right */
+    justify-content: flex-end;  /* all items on the right */
     align-items: center;
+    gap: 1.5rem;                /* equal spacing */
     padding: 0.6rem 2rem;
     font-size: 0.95rem;
+    background: var(--color-background-alt);
     border-bottom: 1px solid var(--color-border);
-    gap: 1.2rem;
+}
+
+/* Right section (wraps search + links + language) */
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 /* Links */
-.topbar a {
+.topbar a, 
+.topbar span {
     color: var(--color-text-main);
     text-decoration: none;
-    margin: 0 0.8rem;
-    transition: color 0.3s;
+    font-weight: 500;
 }
+
 .topbar a:hover {
     color: var(--color-accent);
 }
 
-/* Search */
-#searchIcon {
-    cursor: pointer;
-    transition: color 0.3s;
+/* Search Wrapper
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+} */
+
+#searchInput {
+    display: none; /* hidden by default */
+    width: 260px;  /* increased size */
+    padding: 0.45rem 2.2rem 0.45rem 2rem; /* room for icons */
+    border: 1px solid var(--color-border);
+    border-radius: 25px;
+    background: var(--color-background-main);
+    color: var(--color-text-main);
+    font-size: 0.95rem;
+    transition: none;
 }
+
+/* Search icon inside */
+#searchIcon {
+    position: relative;
+    left: 0.5rem;
+    color: var(--color-text-muted);
+    cursor: pointer;
+}
+
+/* Clear (x) button inside */
+#clearSearch {
+    position: absolute;
+    right: 8px;
+    color: var(--color-muted);
+    cursor: pointer;
+    display: none;
+}
+
+#clearSearch:hover,
 #searchIcon:hover {
     color: var(--color-accent);
 }
 
-#searchInput {
-    display: none;
-    padding: 0.3rem 0.6rem;
-    border: 1px solid var(--color-border);
-    border-radius: 5px;
-    background: var(--color-background-main);
-    color: var(--color-text-main);
-    margin-right: 1rem; /* spacing before other links */
-}
-
 /* Language selector */
-.language-selector {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
 .language-selector select {
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
     background: var(--color-background-main);
     color: var(--color-text-main);
-    border: 1px solid var(--color-border);
-    border-radius: 5px;
-    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
 }
 
 
