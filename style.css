@@ -51,7 +51,7 @@ body {
   align-items: center;
   gap: 1.1rem;
   font-size: 1rem;
-  margin: 4rem 5rem 0 0;
+  margin: 1rem 5rem 0.1rem 0;
 }
 
 /* Right group */
@@ -149,12 +149,12 @@ body {
 }
 
 /* Open state */
-.language-selector.is-open .lang-menu { display: block; }
-.language-selector.is-open .chevron { transform: rotate(180deg); }
-
-
-
-
+.language-selector.is-open .lang-menu {
+     display: block;
+}
+.language-selector.is-open .chevron { 
+    transform: rotate(180deg); 
+}
 
 
 /* Container */
