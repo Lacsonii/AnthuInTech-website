@@ -42,6 +42,65 @@ body {
     line-height: 1.6;
 }
 
+/*  topbar */
+.topbar {
+    background: var(--color-background-alt);
+    color: var(--color-text-main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 2rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.topbar a {
+    color: var(--color-text-main);
+    text-decoration: none;
+    margin-right: 1.5rem;
+    transition: color 0.3s;
+}
+
+.topbar a:hover {
+    color: var(--color-accent);
+}
+
+/* Search */
+#searchIcon {
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+#searchIcon:hover {
+    color: var(--color-accent);
+}
+
+#searchInput {
+    display: none;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    background: var(--color-background-main);
+    color: var(--color-text-main);
+}
+
+/* Language Selector */
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.language-selector select {
+    background: var(--color-background-main);
+    color: var(--color-text-main);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+}
+
+
 /* Container */
 .container {
     flex: 1;
@@ -84,7 +143,7 @@ body {
 }
 
 /* Button */
-button {
+/* button {
     background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
     color: var(--color-primary);
     border: none;
@@ -95,7 +154,7 @@ button {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 15px rgba(123, 47, 247, 0.4);
-}
+} */
 /*/ company linkes */
 .company-links {
     text-align: center;
