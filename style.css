@@ -41,26 +41,26 @@ body {
     flex-direction: column;
     line-height: 1.6;
 }
-
-/*  topbar */
+/* Topbar */
 .topbar {
     background: var(--color-background-alt);
     color: var(--color-text-main);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* push everything to right */
     align-items: center;
     padding: 0.6rem 2rem;
     font-size: 0.95rem;
     border-bottom: 1px solid var(--color-border);
+    gap: 1.2rem;
 }
 
+/* Links */
 .topbar a {
     color: var(--color-text-main);
     text-decoration: none;
-    margin-right: 1.5rem;
+    margin: 0 0.8rem;
     transition: color 0.3s;
 }
-
 .topbar a:hover {
     color: var(--color-accent);
 }
@@ -68,10 +68,8 @@ body {
 /* Search */
 #searchIcon {
     cursor: pointer;
-    margin-right: 1rem;
     transition: color 0.3s;
 }
-
 #searchIcon:hover {
     color: var(--color-accent);
 }
@@ -83,15 +81,15 @@ body {
     border-radius: 5px;
     background: var(--color-background-main);
     color: var(--color-text-main);
+    margin-right: 1rem; /* spacing before other links */
 }
 
-/* Language Selector */
+/* Language selector */
 .language-selector {
     display: flex;
     align-items: center;
     gap: 0.4rem;
 }
-
 .language-selector select {
     background: var(--color-background-main);
     color: var(--color-text-main);
@@ -99,6 +97,8 @@ body {
     border-radius: 5px;
     padding: 0.2rem 0.5rem;
 }
+
+
 
 
 /* Container */
