@@ -20,6 +20,8 @@
     --color-accent: #14F1D9;            /* Glow / link highlight */
     --color-highlight: #7B2FF7;         /* Secondary highlight */
 
+    --general-color: #000000;   /* just a general color */
+
     /* Borders & Dividers */
     --color-border: rgba(20, 241, 217, 0.3); /* Subtle teal border glow */
 
@@ -41,7 +43,7 @@ body {
     flex-direction: column;
     line-height: 1.6;
 
-    
+}
     /* Topbar */
 .topbar {
     display: flex;
