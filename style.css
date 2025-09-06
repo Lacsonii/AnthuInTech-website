@@ -51,7 +51,7 @@ body {
   align-items: center;
   gap: 1.5rem;
   padding: 0.6rem 2rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   background: var(--color-background-alt);
 }
 
