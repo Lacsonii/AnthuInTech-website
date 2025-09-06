@@ -212,7 +212,7 @@ padding-left: 10px;
 }
 
 /* Button */
-/* button {
+button {
     background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
     color: var(--color-primary);
     border: none;
@@ -223,7 +223,7 @@ padding-left: 10px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 15px rgba(123, 47, 247, 0.4);
-} */
+}
 /*/ company linkes */
 .company-links {
     text-align: center;
