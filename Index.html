@@ -10,25 +10,38 @@
 </head>
 <body>
 
-    <div class="topbar">
-    <div class="topbar-left">
-        <i id="searchIcon" class="fas fa-search"></i>
-        <input type="text" id="searchInput" placeholder="Search..." />
+ 
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="topbar-right">
+    <!-- Search -->
+    <div class="search-wrapper">
+      <i id="searchIcon" class="fas fa-search"></i>
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <i id="clearSearch" class="fas fa-times"></i>
     </div>
-    <div class="topbar-right">
-        <a href="#">Support</a>
-        <span>Sales: +2650 00 000 000</span>
-        <div class="language-selector">
-            <i id="langIcon" class="fas fa-globe"></i>
-            <ul id="langMenu" class="lang-menu">
-                <li>English</li>
-                <li>Français</li>
-                <li>Español</li>
-                <li>Deutsch</li>
-            </ul>
-        </div>
+
+    <a href="#">Support</a>
+    <span>Sales: +2650 00 000 000</span>
+
+    <!-- Language (globe + chevron) -->
+    <div class="language-selector" id="languageSelector">
+      <button class="language-trigger" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-globe"></i>
+        <i class="fas fa-chevron-down chevron"></i>
+      </button>
+      <ul class="lang-menu" id="langMenu" role="menu">
+        <li role="menuitem">English</li>
+        <li role="menuitem">Français</li>
+        <li role="menuitem">Español</li>
+        <li role="menuitem">Deutsch</li>
+      </ul>
     </div>
+  </div>
 </div>
+
+
  
     <div class="container">
         <div class="header">
