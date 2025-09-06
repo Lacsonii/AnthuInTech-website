@@ -63,7 +63,7 @@ body {
 }
 
 .topbar a, .topbar span {
-  color: var(--color-text-main);
+  color: var(--general-color);
   text-decoration: none;
   font-weight: 500;
 }
@@ -77,10 +77,10 @@ body {
 }
 #searchInput {
   display: none;                 /* toggled by JS */
-  width: 300px;                  /* wider input */
+  width: 700px;                  /* wider input */
   padding: 0.48rem 2.2rem 0.48rem 2rem; /* room for icons */
   border: 1px solid var(--color-border);
-  border-radius: 24px;
+  /* border-radius: 24px; */
   background: var(--color-background-main);
   color: var(--color-text-main);
   font-size: 0.95rem;
