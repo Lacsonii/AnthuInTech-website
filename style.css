@@ -148,12 +148,13 @@ padding-left: 10px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
   z-index: 1000;
 }
+
 .lang-menu li {
   padding: 0.55rem 0.9rem;
   color: var(--general-color);
   cursor: pointer;
   white-space: nowrap;
-  transition: background 0.2s, color 0.2s;
+  transition: none;
 }
 .lang-menu li:hover {
   background: var(--color-accent);
