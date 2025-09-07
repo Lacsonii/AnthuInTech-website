@@ -51,7 +51,7 @@ body {
   align-items: center;
   gap: 1.1rem;
   font-size: 1rem;
-  margin: 2rem 3.1rem 0.1rem 0;
+  margin: 2rem 15rem 0.1rem 0;
   z-index: 15000;
 }
 
@@ -212,7 +212,7 @@ padding-left: 10px;
 .header img {
     width: 300px;
     height: auto;
-    margin:-0.1rem 0 1rem 0;
+    margin:-0.1rem 0 1rem 15rem;
     border-radius: 2px;
     filter: drop-shadow(0 0 12px var(--color-accent));
 }
@@ -226,14 +226,14 @@ padding-left: 10px;
     text-transform: uppercase;
     text-shadow: 0 0 8px rgba(20, 241, 217, 0.6);
     text-align: right;
-    margin: -160px 50px 0 0;
+    margin: -160px 15rem 0 0;
 }
 
 /* Content */
 .content p {
     font-size: 1rem;
     color: var(--color-text);
-    margin: -10px 50px 0 0;
+    margin: -10px 15rem 0 0;
     opacity: 0.9;
     text-align: right;
 }
