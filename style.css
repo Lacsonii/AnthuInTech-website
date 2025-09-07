@@ -298,6 +298,58 @@ button {
     box-shadow: 0 0 12px rgba(20, 241, 217, 0.6), 0 0 18px rgba(123, 47, 247, 0.4);
 }
 
+/* gllobe */
+.globe {
+    display: block;
+    margin: 5rem 0 0 500px;
+    height: 180px;
+    width: auto;
+}
+
+.pre-ait{
+    margin: -450px 0 0 600px;
+}
+ .pre-ait h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 8rem;
+    font-weight: bolder;
+    color: var(--general-color);
+    letter-spacing: 1px;
+    text-align: left;
+    margin: -180px 15rem 0 0;
+
+ }
+
+ .pre-ait pre{
+    font-size: 2rem;
+    font-weight:lighter;
+    color: var(--general-color);
+    text-align: left;
+    margin: -50px 0 0 -280px;
+
+ }
+
+ .learn-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #B22222; /* matching the red color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.learn-btn:hover {
+    background-color: #8B1A1A; /* darker red on hover */
+    transform: translateY(-2px); /* slight lift effect */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
 
 /* Footer */
 footer {
