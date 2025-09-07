@@ -254,7 +254,7 @@ button {
 /*/ company linkes */
 .company-links {
     text-align: center;
-    margin-top: 2rem;
+    margin: 1rem 0 0 -2rem;
 }
 
 /* .company-links h2 {
@@ -272,7 +272,7 @@ button {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; /* keeps links responsive on smaller screens */
-    gap: 1.5rem;
+    gap: 0.5rem;
 }
 
 .company-links ul li {
