@@ -265,7 +265,7 @@ body {
 
 /* Content */
 .content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--color-text);
     margin: -10px 2rem 0 0;
     opacity: 0.9;
@@ -344,26 +344,26 @@ button {
 }
 
 .pre-ait {
-    margin: -450px 0 0 600px;
+    margin: -420px 0 0 600px;
 }
 
 .pre-ait h1 {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: bolder;
     color: var(--general-color);
     letter-spacing: 1px;
     text-align: left;
-    margin: -180px 15rem 0 0;
+    margin: -150px 15rem 1rem 0;
 
 }
 
 .pre-ait pre {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: lighter;
     color: var(--general-color);
     text-align: left;
-    margin: -50px 0 0 -280px;
+    margin: -50px 0 0 -270px;
 
 }
 
@@ -392,14 +392,28 @@ button {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* mission */
+section .mission{
+    margin: 450px 0 0 200px;
+}
+.mission h1{
+    margin: 0 0 0 113px;
+    font-size: 110px;
+}
+.mission-statement{
+    margin: -20px 0 0 1px;
+    font-size: 30px;
+    font-weight: 150;
 
+}
 /* Footer Styles */
 .footer {
-    background: #0c0e23;
+    background: var(--general-color);
     color: #e6e6e6;
-    padding: 50px 0 20px;
+    padding: 80px 0 20px;
     border-top: 1px solid #2a2e62;
     margin-top: 1000px;
+    height: 500px;
 }
 
 .footer-container {
@@ -473,6 +487,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    
 }
 
 .legal-links a {
