@@ -307,7 +307,7 @@ body {
 
 /* Content */
 .content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--color-text);
     margin: -20px 2rem 0 0;
     opacity: 0.9;
@@ -583,6 +583,9 @@ font-size: 14px;
 .doc h1{
     margin: 20px 0px 5px 0px;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.doc a{
+    text-decoration: none;
 }
 /* Footer Styles */
 
