@@ -62,33 +62,41 @@ body {
     height: 550px;
     border-radius: 0px 0px 150px 0px;
 }
+.first_coontainer_ourteam{
+    background-color: whitesmoke;
+    height: 200px;
+    border-radius: 0px 0px 100px 0px;
+    margin-bottom: 100px;
+}
 .first_coontainer:hover{
     background-color: whitesmoke;
 }
 
 .second-container{
-    background-color: whitesmoke;
+    background-color: orange;
     height: 550px;
     border-radius: 150px 0px 0px 0px;
 
 }
 .second-container:hover{
     background-color: whitesmoke;
-}
-
-.third_container{
-    background-color: whitesmoke;
-    height: 550px;
-    border-radius: 150px 0px 150px 0px;
+    background-position: right b;
 }
 .third_container:hover{
     background-color: whitesmoke;
 }
 
-.forth_container{
-    background-color: whitesmoke;
+.third_container{
+    background-color: orange;
     height: 550px;
     border-radius: 0px 0px 150px 0px;
+}
+ 
+
+.forth_container{
+    background-color: whitesmoke;
+    height: 650px;
+    border-radius: 150px 0px 150px 0px;
 }
 /* Topbar */
 .topbar {
@@ -437,6 +445,7 @@ section .mission{
 .mission h1{
     margin: -400px 0 0 113px;
     font-size: 110px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 .mission-statement{
     margin: -20px 0 0 -145px;
@@ -449,7 +458,7 @@ section .mission{
     height: 220px;
     margin: 140px 0px 0px 1000px;
 }
-
+/*  */
 .vision{
     margin: 80px 0 0 10px;
     text-align: right;
@@ -458,6 +467,7 @@ section .mission{
 .vision h1{
     margin: -350px 100px 0 1px;
     font-size: 110px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 .vision-statement{
     margin: -20px 100px 0 1px;
@@ -473,15 +483,116 @@ section .mission{
     
 }
 
+/*  */
+.internt-users{
+    margin: 50px 0 500px 100px;
+    text-align: left;
+    
+}
+.internt-users h1{
+    margin: 80px 100px 0 1px;
+    font-size: 90px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+.internet-user-stmt{
+    margin: -20px 0px 0 -120px;
+    font-size: 30px;
+    font-weight: 500;
+}
 
+/* out team page */
+.ceo_image{
+    width: 85%;
+    height: 450px;
+    background-color: whitesmoke;
+    margin: 100px 0px 10px 100px;
+    border-radius: 10px;
+}
+
+.ceo_image img{
+    width: 290px;
+    height: 350px;
+    margin: 50px 0px 0px 100px;
+    border-radius: 10px;
+}
+
+.dec{
+    margin: -300px 0px 0px 470px;
+}
+.dec h1{
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+}
+.dec p{
+    font-weight: 600px;
+    margin-bottom: 20px;
+    text-decoration: underline 1px solid orange;
+}
+.dec pre{
+    font-size: 15px;
+}
+
+.ceo-links {
+  display: flex;
+  gap: 20px; /* space between icons */
+  margin-top: 20px;
+}
+
+.ceo-links a {
+  font-size: 20px;
+  color: #333; /* default color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.ceo-links a:hover {
+  color: var(--color-accent); 
+}
+
+/* company profile page */
+.company_profile{
+    height: 2200px;
+    width: 1150px;
+    background-color: whitesmoke;
+    margin: 100px 0px 0px 100px;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+/* btn download prrofle */
+  .btn-download {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 14px 0px 0px 130px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(10, 116, 255, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  .btn-download:hover {
+    background: linear-gradient(90deg, #0066d6, #0a74ff);
+    transform: translateY(-2px);
+  }
+
+.doc{
+margin: 20px 0px 0px 130px;
+font-size: 14px;
+}
+.doc h1{
+    margin: 20px 0px 5px 0px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
 /* Footer Styles */
-.footer {
+
+footer {
     background: var(--general-color);
     color: #e6e6e6;
     padding: 80px 0 20px;
     border-top: 1px solid #2a2e62;
-    margin-top: 1000px;
     height: 500px;
+    margin-top: 50px;
 }
 
 .footer-container {
@@ -509,6 +620,7 @@ section .mission{
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-decoration: underline 1px solid orange;
 }
 
 .footer-links {
