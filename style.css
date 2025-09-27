@@ -49,13 +49,47 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: var(--color-text);
+    background-color: orange;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     line-height: 1.6;
 
 }
+/* background color */
+.first_coontainer{
+    background-color: whitesmoke;
+    height: 550px;
+    border-radius: 0px 0px 150px 0px;
+}
+.first_coontainer:hover{
+    background-color: whitesmoke;
+}
 
+.second-container{
+    background-color: whitesmoke;
+    height: 550px;
+    border-radius: 150px 0px 0px 0px;
+
+}
+.second-container:hover{
+    background-color: whitesmoke;
+}
+
+.third_container{
+    background-color: whitesmoke;
+    height: 550px;
+    border-radius: 150px 0px 150px 0px;
+}
+.third_container:hover{
+    background-color: whitesmoke;
+}
+
+.forth_container{
+    background-color: whitesmoke;
+    height: 550px;
+    border-radius: 0px 0px 150px 0px;
+}
 /* Topbar */
 .topbar {
     display: flex;
@@ -244,9 +278,9 @@ body {
 
 
 .header img {
-    width: 300px;
+    width: 220px;
     height: auto;
-    margin: -0.1rem 0 1rem 2rem;
+    margin: 12px 0 3rem 2rem;
     border-radius: 2px;
     filter: drop-shadow(0 0 12px var(--color-accent));
 }
@@ -255,19 +289,19 @@ body {
     font-family: 'Rajdhani', sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
-    color: var(--color-accent);
+    color: black;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-shadow: 0 0 8px rgba(20, 241, 217, 0.6);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     text-align: right;
-    margin: -160px 2rem 0 0;
+    margin: -150px 2rem 0 0;
 }
 
 /* Content */
 .content p {
     font-size: 1.2rem;
     color: var(--color-text);
-    margin: -10px 2rem 0 0;
+    margin: -20px 2rem 0 0;
     opacity: 0.9;
     text-align: right;
 }
@@ -303,12 +337,13 @@ button {
 /* Inline links */
 .company-links ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     /* keeps links responsive on smaller screens */
     gap: 0.5rem;
+    margin: -80px 0px 0px -150px;
 }
 
 .company-links ul li {
@@ -323,28 +358,32 @@ button {
     padding: 0.5rem 0.8rem;
     border-radius: 8px;
     transition: all 0.3s ease;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    text-decoration: underline;
+
 }
 
 /* Hover effect with glow */
 .company-links ul li a:hover {
     color: var(--color-text-main);
     transition: none;
+     text-decoration: none;
     font-weight: lighter;
     background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
     box-shadow: 0 0 12px rgba(20, 241, 217, 0.6), 0 0 18px rgba(123, 47, 247, 0.4);
 }
 
 
-/* gllobe */
+/* gllobe
 .globe {
     display: block;
-    margin: 5rem 0 0 300px;
-    height: 180px;
+    margin: 5rem 0 0 100px;
+    height: 200px;
     width: auto;
-}
+} */
 
 .pre-ait {
-    margin: -420px 0 0 600px;
+    margin: 0px 0 0 300px;
 }
 
 .pre-ait h1 {
@@ -354,7 +393,7 @@ button {
     color: var(--general-color);
     letter-spacing: 1px;
     text-align: left;
-    margin: -150px 15rem 1rem 0;
+    margin: 50px 15rem 1rem 0;
 
 }
 
@@ -363,13 +402,12 @@ button {
     font-weight: lighter;
     color: var(--general-color);
     text-align: left;
-    margin: -50px 0 0 -270px;
+    margin: -50px 0 -20px -270px;
 
 }
 
 .learn-btn {
     display: inline-block;
-    margin-top: 1.5rem;
     padding: 0.8rem 2rem;
     background-color: #B22222;
     /* matching the red color */
@@ -394,17 +432,35 @@ button {
 
 /* mission */
 section .mission{
-    margin: 450px 0 0 200px;
-    background: var(--color-accent);
-    width: 1300px;
-    border-radius: 15px 0;
+    margin: 80px 0 0 10px;
 }
 .mission h1{
-    margin: 0 0 0 113px;
+    margin: -400px 0 0 113px;
     font-size: 110px;
 }
 .mission-statement{
     margin: -20px 0 0 -145px;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.mission-image img{
+    width: 350px;
+    height: 220px;
+    margin: 140px 0px 0px 1000px;
+}
+
+.vision{
+    margin: 80px 0 0 10px;
+    text-align: right;
+    
+}
+.vision h1{
+    margin: 0 100px 0 1px;
+    font-size: 110px;
+}
+.vision-statement{
+    margin: -20px 100px 0 1px;
     font-size: 30px;
     font-weight: 500;
 
@@ -506,48 +562,3 @@ section .mission{
 }
 
 
-/* Responsive Design
-@media (max-width: 1024px) {
-    .header h1 {
-        font-size: 2.2rem;
-    }
-
-    .content p {
-        font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .header img {
-        width: 100px;
-    }
-
-    .header h1 {
-        font-size: 1.8rem;
-    }
-
-    button {
-        padding: 0.7rem 1.2rem;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 1rem;
-    }
-
-    .header h1 {
-        font-size: 1.5rem;
-        letter-spacing: 1px;
-    }
-
-    .content p {
-        font-size: 1rem;
-    }
-
-    button {
-        width: 100%;
-        padding: 0.9rem;
-    }
-} */
