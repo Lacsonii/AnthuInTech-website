@@ -92,12 +92,35 @@ body {
     border-radius: 0px 0px 150px 0px;
 }
  
-
 .forth_container{
-    background-color: whitesmoke;
+    background-color: orange;
     height: 650px;
     border-radius: 150px 0px 150px 0px;
 }
+
+.fifth_containter{
+    background-color: whitesmoke;
+    height: 550px;
+    width: 1300px;
+    margin-left: 50px;
+    border-radius: 150px 0px 0px 150px;
+
+}
+
+.sixth_containter{
+    background-color: orange;
+    height: 550px;
+    border-radius: 150px 150px 150px 150px;
+}
+
+.seventh_containter{
+    background-color: whitesmoke;
+    height: 550px;
+    width: 1300px;
+    border-radius: 0px 150px 150px 0px;
+}
+
+
 /* Topbar */
 .topbar {
     display: flex;
@@ -485,7 +508,7 @@ section .mission{
 
 /*  */
 .internt-users{
-    margin: 50px 0 500px 100px;
+    margin: 50px 0px 302px 100px;
     text-align: left;
     
 }
