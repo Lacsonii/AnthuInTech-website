@@ -114,7 +114,7 @@ body {
 
 .sixth_containter {
     background-color: orange;
-    height: 750px;
+    height: 800px;
     border-radius: 150px 150px 150px 150px;
 }
 
@@ -344,9 +344,8 @@ body {
 
 /* Button */
 button {
-    background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
-    color: var(--color-primary);
-    border: none;
+
+    border: 1px solid orange;
     padding: 0.8rem 1.5rem;
     border-radius: 50px;
     font-size: 1rem;
@@ -395,18 +394,18 @@ button {
     border-radius: 8px;
     transition: all 0.3s ease;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    text-decoration: underline;
+    text-decoration: underline 1px solid orange;
 
 }
 
 /* Hover effect with glow */
 .company-links ul li a:hover {
-    color: var(--color-text-main);
+    color: black;
+    border: 1px solid orange;
     transition: none;
     text-decoration: none;
     font-weight: lighter;
-    background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
-    box-shadow: 0 0 12px rgba(20, 241, 217, 0.6), 0 0 18px rgba(123, 47, 247, 0.4);
+    
 }
 
 
@@ -445,15 +444,16 @@ button {
 .learn-btn {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background-color: #B22222;
+    background-color: transparent;
     /* matching the red color */
-    color: #fff;
-    border: none;
+    color: black;
+    border: 1px solid orange;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 .log {
@@ -461,7 +461,7 @@ button {
 }
 
 .learn-btn:hover {
-    background-color: #8B1A1A;
+    background-color: whitesmoke;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -569,31 +569,6 @@ section .mission {
     /* align properly at the top */
 }
 
-/*  */
-.spotify_project {
-    width: 45vw;
-    margin: 25px 0px 0px 190px;
-}
-
-.spotify_project h1 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 35px;
-    text-decoration: none;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    padding-top: 50px;
-}
-
-.spotify_project iframe {
-    margin-top: -10px;
-    width: 500px;
-    background-color: #000000;
-}
-
-.message{
-    text-decoration: none;
-    color: black;
-}
-
 .sixth_containter a {
     background: linear-gradient(90deg, var(--color-accent), var(--color-highlight));
     color: white;
@@ -604,7 +579,7 @@ section .mission {
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-    margin: 10px 0px 10px 205px;
+    margin: 10px 0px 50px 205px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 15px rgba(123, 47, 247, 0.4);
 }
@@ -613,6 +588,62 @@ section .mission {
     color: var(--color-accent);
 }
 
+/* database Solutions */
+.fifth_containter .database{
+    margin: 70px 0px 0px 110px;
+}
+
+.database h1{
+    text-shadow:0 0 8px rgba(0, 0, 0, 0.6);
+    font-size: 45px;
+    text-decoration: underline 1px solid orange;
+    margin-bottom: 20px;
+}
+.database pre{
+    font-size: 18px;
+}
+
+.database img{
+    margin: -260px 0px 0px 700px;
+    width: 450px;
+    height: auto;
+    background-color: orange;
+border-radius: 70px;
+}
+/* Podcast sectoin */
+.seventh_containter .spotify_project {
+    width: 45vw;
+    margin: 20px 0px 0px 150px;
+}
+
+.seventh_containter .spotify_project h1 {
+    font-size: 45px;
+    text-decoration: underline 1px solid orange;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    padding-top: 20px;
+}
+
+.seventh_containter .spotify_project iframe {
+    margin-top: -10px;
+    width: 500px;
+    background-color: #000000;
+}
+
+.seventh_containter .message{
+    text-decoration: none;
+    color: black;
+    margin: -330px 0px 0px 720px;
+}
+ .message h2{
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+      margin-bottom: 20px;
+      font-size: 30px;
+ }
+ .message pre{
+      font-size: 18px;
+ }
+
+ 
 /* contact us page  */
 .contact_containter {
     background-color: whitesmoke;
@@ -658,7 +689,7 @@ section .mission {
 .dec pre {
     font-size: 15px;
 }
-
+/* style for ceo linkes and podcast links */
 .ceo-links {
     display: flex;
     gap: 20px;
@@ -680,7 +711,7 @@ section .mission {
 
 /* company profile page */
 .company_profile {
-    height: 2200px;
+    height: 2350px;
     width: 1150px;
     background-color: whitesmoke;
     margin: 100px 0px 0px 100px;
@@ -709,12 +740,13 @@ section .mission {
 
 .doc {
     margin: 20px 0px 0px 130px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .doc h1 {
     margin: 20px 0px 5px 0px;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    text-decoration: underline 1px solid orange;
 }
 
 .doc a {
