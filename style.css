@@ -564,8 +564,9 @@ section .mission {
 }
 
 .sixth_containter a {
-    color: white;
+    color: black;
     border: 1px solid whitesmoke;
+    background-color: whitesmoke;
     padding: 0.8rem 1.5rem;
     border-radius: 10px;
     font-size: 2rem;
@@ -579,6 +580,10 @@ section .mission {
 
 .sixth_containter a:hover {
     color: black;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+
 }
 
 /* database Solutions */
