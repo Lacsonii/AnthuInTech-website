@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Search toggle + clear
-  const searchIcon  = document.getElementById("searchIcon");
+  const searchIcon = document.getElementById("searchIcon");
   const searchInput = document.getElementById("searchInput");
   const clearSearch = document.getElementById("clearSearch");
 
@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Language dropdown
   const langSelector = document.getElementById("languageSelector");
-  const langBtn      = document.getElementById("langBtn");
-  const langMenu     = document.getElementById("langMenu");
+  const langBtn = document.getElementById("langBtn");
+  const langMenu = document.getElementById("langMenu");
 
   function closeLangMenu() {
     langSelector.classList.remove("is-open");
@@ -69,22 +69,45 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-// 
-let lastScrollTop = 0;
-const header = document.getElementById("header");
+  // 
+  let lastScrollTop = 0;
+  const header = document.getElementById("header");
 
-window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
-        // Scrolling down
-        header.style.top = "-100px"; // hides header
+      // Scrolling down
+      header.style.top = "-100px"; // hides header
     } else {
-        // Scrolling up
-        header.style.top = "0"; // shows header
+      // Scrolling up
+      header.style.top = "0"; // shows header
     }
 
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // prevent negative
+  });
+
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {display:true},
+      title: {
+        display: true,
+        text: "World Wine Production 2018",
+        font: {size:16}
+      }
+    }
+  }
 });
 
 });

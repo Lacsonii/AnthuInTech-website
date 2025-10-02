@@ -400,7 +400,7 @@ button {
     transition: none;
     text-decoration: none;
     font-weight: lighter;
-    
+
 }
 
 
@@ -511,24 +511,26 @@ section .mission {
 
 }
 
-/*  */
-.internt-users {
+/* Software Solutions  */
+.softwareSolutions {
     margin: 50px 0px 302px 100px;
     text-align: left;
 
 }
 
-.internt-users h1 {
-    margin: 80px 100px 0 1px;
-    font-size: 90px;
+.softwareSolutions h1 {
+    margin: 60px 100px 20px 1px;
+    font-size: 80px;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
-.internet-user-stmt {
+.softwareSolutions-stmt {
     margin: -20px 0px 0 -120px;
     font-size: 30px;
     font-weight: 500;
 }
+
+
 
 /* excel section */
 .ms-excel h1 {
@@ -587,27 +589,29 @@ section .mission {
 }
 
 /* database Solutions */
-.fifth_containter .database{
+.fifth_containter .database {
     margin: 70px 0px 0px 110px;
 }
 
-.database h1{
-    text-shadow:0 0 8px rgba(0, 0, 0, 0.6);
+.database h1 {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     font-size: 45px;
     text-decoration: underline 1px solid orange;
     margin-bottom: 20px;
 }
-.database pre{
+
+.database pre {
     font-size: 18px;
 }
 
-.database img{
+.database img {
     margin: -260px 0px 0px 700px;
     width: 450px;
     height: auto;
     background-color: orange;
-border-radius: 70px;
+    border-radius: 70px;
 }
+
 /* Podcast sectoin */
 .seventh_containter .spotify_project {
     width: 45vw;
@@ -627,21 +631,23 @@ border-radius: 70px;
     background-color: #000000;
 }
 
-.seventh_containter .message{
+.seventh_containter .message {
     text-decoration: none;
     color: black;
     margin: -330px 0px 0px 720px;
 }
- .message h2{
-      text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-      margin-bottom: 20px;
-      font-size: 30px;
- }
- .message pre{
-      font-size: 18px;
- }
 
- 
+.message h2 {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.message pre {
+    font-size: 18px;
+}
+
+
 /* contact us page  */
 .contact_containter {
     background-color: whitesmoke;
@@ -687,6 +693,7 @@ border-radius: 70px;
 .dec pre {
     font-size: 15px;
 }
+
 /* style for ceo linkes and podcast links */
 .ceo-links {
     display: flex;
@@ -748,6 +755,126 @@ border-radius: 70px;
 
 .doc a {
     text-decoration: none;
+}
+
+
+/* Contact us page */
+.Contact-container {
+    padding: 50px 50px 50px 100px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.contact-info h1 {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    margin: 0px 0px 10px 0px;
+
+}
+
+.contact-info pre {
+    font-size: 17px;
+}
+
+.contact-info p {
+    margin-bottom: 60px;
+    font-size: 17px;
+
+}
+
+.book-meeting {
+    padding: 12px 20px;
+    margin: 14px 0px 0px 0px;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid orange;
+    box-shadow: 0 4px 10px rgba(10, 116, 255, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.book-meeting a {
+    color: black;
+    text-decoration: none;
+}
+
+.book-meeting:hover {
+    transform: translateY(-2px);
+
+}
+
+.contact-form {
+    margin: -390px 0px 0px 550px;
+}
+
+ 
+
+form {
+    max-width: 400px;
+    margin: 12px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.input:focus {
+    border-color: #007bff;
+}
+
+textarea.input {
+    min-height: 100px;
+    resize: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid orange;
+    box-shadow: 0 4px 10px rgba(10, 116, 255, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
 }
 
 /* Footer Styles */
