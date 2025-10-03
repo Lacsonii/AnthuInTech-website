@@ -450,9 +450,7 @@ button {
     transition: all 0.3s ease;
 }
 
-.log {
-    margin-left: 20px;
-}
+
 
 .learn-btn:hover {
     background-color: whitesmoke;
@@ -888,6 +886,25 @@ footer {
     margin-top: 50px;
 }
 
+.log{
+    color: whitesmoke;
+    padding: 0.5rem 2rem;
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.log:hover{
+    color: whitesmoke;
+    border: none;
+    transform: none;
+
+
+}
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
