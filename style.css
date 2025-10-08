@@ -598,6 +598,16 @@ section .mission {
     margin-bottom: 20px;
 }
 
+.database .getstarted a{
+    text-decoration: none;
+    color: black;
+}
+
+.getstarted:hover{
+    background-color: orange;
+    color: whitesmoke;
+}
+
 .database pre {
     font-size: 18px;
 }
