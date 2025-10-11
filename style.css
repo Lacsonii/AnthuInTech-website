@@ -967,6 +967,7 @@ textarea.input {
 /* brand */
 .brand {
   width: 100%;
+  margin: 700px 0px 0px 0px;
   background: transparent;  
   padding: 12px 0;
   overflow: hidden; /* hide overflow while image translates */
@@ -974,7 +975,7 @@ textarea.input {
 
 .brand-marquee {
   display: flex;
-  gap: 40px; /* space between repeated logos */
+  gap: 35px; /* space between repeated logos */
   align-items: center;
   /* Start the container off-screen to the right and animate left */
   animation: marquee 12s linear infinite;
@@ -983,17 +984,17 @@ textarea.input {
 
 /* Logo sizing: responsive and crisp */
 .brand-logo {
-  height: 48px;            /* base height on desktop */
-  max-height: 8vh;        /* scale on very small/large viewports */
+  height: 100px;            /* base height on desktop */
+  max-height: 20vh;        /* scale on very small/large viewports */
   width: auto;
   object-fit: contain;
   display: block;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); /* optional */
 }
 
-/* If you want larger logos on bigger screens */
+/* bigger screens */
 @media (min-width: 1024px) {
-  .brand-logo { height: 64px; }
+  .brand-logo { height: 170px; }
 }
 
 /* Keyframes: move from 0% (right) to -50% (left) so duplicated image loops cleanly */
@@ -1002,7 +1003,7 @@ textarea.input {
   100% { transform: translateX(-50%); }
 }
 
-/* Reduce motion preference */
+/* motion preference */
 @media (prefers-reduced-motion: reduce) {
   .brand-marquee { animation: none; transform: none; }
 }
